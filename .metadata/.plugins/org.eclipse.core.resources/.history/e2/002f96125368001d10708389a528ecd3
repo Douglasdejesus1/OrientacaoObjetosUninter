@@ -1,0 +1,44 @@
+package uninter;
+
+import java.util.ArrayList;
+
+public class Cofrinho {
+
+	ArrayList<Moeda> listaMoedas = new ArrayList<Moeda>();
+
+	public void adicionar(Moeda m) {
+		listaMoedas.add(m);
+	}
+
+	public void remover(Moeda m) {
+		listaMoedas.remove(m);
+	}
+
+	double soma = 0;
+
+	public void listar() {
+		if (listaMoedas.isEmpty()) {
+			System.out.println("O cofre está vázio!");
+		} else {
+			for (Moeda m : listaMoedas) {
+				m.info();
+				
+			}
+			
+		}
+	}
+	public void totalConvertido() {
+		double soma = 0;
+		if (listaMoedas.isEmpty()) {
+			System.out.println("O cofre está vázio!");
+		} else {
+			for (Moeda m : listaMoedas) {
+			soma+=m.converter();
+			}
+			System.out.printf("Total convertido em reais: R$ %.2f \n",soma);
+			soma=0;
+			
+		}
+	}
+
+}

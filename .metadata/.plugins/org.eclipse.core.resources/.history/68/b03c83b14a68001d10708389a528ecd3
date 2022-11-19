@@ -1,0 +1,29 @@
+package uninter;
+
+public class Real extends Moeda{
+	
+
+	public Real(double valor) {
+		this.valor=valor;
+	}
+
+	public double converter() {
+		return valor = valor;
+	}
+
+	@Override
+	public void info() {
+		System.out.println("Há o total de R$ "+valor);
+		
+	}
+
+	
+	
+	@Override
+	public String toString() {
+		return "Real [valor= R$ " + valor + "]";
+	}
+	
+	
+
+}

@@ -1,0 +1,15 @@
+package empresa;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		
+		Avaliacao notas = new Avaliacao(5, 6, 8, 10);
+		Aluno hanna = new Aluno("Hanna", "Veterinaria", notas);
+		
+		System.out.println(hanna.curso);
+		
+
+	}
+
+}

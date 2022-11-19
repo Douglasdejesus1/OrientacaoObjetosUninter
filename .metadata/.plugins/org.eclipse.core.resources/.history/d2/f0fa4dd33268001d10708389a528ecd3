@@ -1,0 +1,18 @@
+package uninter;
+
+import java.util.ArrayList;
+
+public class Cofrinho {
+	
+
+	ArrayList<Moeda> moedas = new ArrayList<Moeda>();
+	
+	
+	double soma = 0;
+	public void listar() {
+		for(Moeda m: moedas) {
+			soma+=m.valor;
+		}
+	}
+
+}

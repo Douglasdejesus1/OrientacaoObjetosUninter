@@ -1,0 +1,5 @@
+package empres;
+
+public class Singleton {
+
+}

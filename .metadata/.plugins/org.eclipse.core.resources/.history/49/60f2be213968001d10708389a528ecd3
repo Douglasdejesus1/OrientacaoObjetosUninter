@@ -1,0 +1,23 @@
+package uninter;
+
+import java.util.ArrayList;
+
+public class Cofrinho {
+	
+
+	ArrayList<Moeda> moedas = new ArrayList<Moeda>();
+	ArrayList<Real> reais = new ArrayList<>();
+	ArrayList<Dolar> dolar = new ArrayList<>();
+	ArrayList<Euro> euro = new ArrayList<Euro>();
+	
+	
+	double soma = 0;
+	public void listar(ArrayList<Moeda> moedas2) {
+		for(Moeda m: moedas) {
+			soma+=m.valor;
+		}
+		System.out.println("O total é: "+soma);
+	}
+
+
+}

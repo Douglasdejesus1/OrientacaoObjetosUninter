@@ -1,0 +1,34 @@
+package empresa;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		Horario aula = new Horario();
+		aula.setHora(12);
+		aula.setHora(40);
+
+		System.out.println(aula.getHora());
+
+		ArrayList<String> pessoas = new ArrayList<>();
+		pessoas.add("Mario");
+		pessoas.add("Luigi");
+		pessoas.add("Peach");
+		pessoas.add("Yoshi");
+		System.out.println(pessoas);
+		Collections.sort(pessoas);
+		System.out.println(pessoas);
+		
+
+		HashMap<String, String> capitais = new HashMap();
+		capitais.put("Brasil", "Brasília");
+		capitais.put("Argentina", "Buenos Aires");
+		capitais.put("Paraguai", "Assunção");
+		capitais.put("Uruguai", "Montevidéu");
+		System.out.println(capitais);
+
+	}
+}

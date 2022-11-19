@@ -1,0 +1,38 @@
+package empresa;
+
+public class Conta {
+	int numeroConta;
+	String titular;
+	float saldo;
+	float limite;
+	public Conta(int numeroConta, String titular, float saldo, float limite) {
+		super();
+		this.numeroConta = numeroConta;
+		this.titular = titular;
+		this.saldo = saldo;
+		this.limite = limite;
+	}
+	
+	void sacar(float valor) {
+		if(valor>limite || valor>saldo) {
+			System.out.println("Não foi possivel sacar , consulte limites");
+			System.out.println();
+		}
+		else {
+			saldo-=valor;
+		}
+	}
+	
+	void depositar(float valor) {
+		saldo+=valor;
+	}
+	
+	void info() {
+		System.out.println("Numero da conta: "+numeroConta);
+		System.out.println("Nome do Titular: "+titular);
+		System.out.printf("Saldo %.2f \n", saldo);
+		System.out.printf("Limite %.2f \n\n", limite);
+		
+	}
+
+}

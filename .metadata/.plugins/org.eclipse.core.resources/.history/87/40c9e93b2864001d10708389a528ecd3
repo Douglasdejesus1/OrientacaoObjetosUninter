@@ -1,0 +1,14 @@
+package empresa;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		Aluno a = new Aluno();
+		System.out.println(a);
+		a.nome="Douglas";
+		a.matricula=31801;
+		a.cpf="384.531.288-20";
+		
+	}
+
+

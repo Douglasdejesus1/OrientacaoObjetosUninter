@@ -1,0 +1,25 @@
+package empresa;
+
+public class Horario {
+	private int hora;
+	private int minuto;
+	private int segundo;
+	public Horario(int hora, int minuto, int segundo) {
+		super();
+		this.hora = hora;
+		this.minuto = minuto;
+		this.segundo = segundo;
+	}
+	public Horario() {
+		super();
+	}
+	
+	
+	public int getHora() {
+		return hora;
+	}
+	public void setHora(int hora) {
+		this.hora=hora;
+	}
+
+}

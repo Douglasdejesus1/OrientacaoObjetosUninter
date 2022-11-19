@@ -1,0 +1,23 @@
+package uninter;
+
+import java.util.ArrayList;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		
+		Cofrinho cofrinho = null;
+		ArrayList<Moeda> moedas = new ArrayList<>();
+		Real reais = new Real(12.45);
+		Real reais2 = new Real(25.45);
+		
+		moedas.add(reais);
+		moedas.add(reais2);
+		
+		reais.info();
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,12 @@
+package empresa;
+
+public class Conta {
+	int numeroConta;
+	String titular;
+	float saldo;
+	float limite;
+	
+	
+	
+
+}

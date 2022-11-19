@@ -1,0 +1,20 @@
+package empresa;
+
+public class Principal {
+
+	public static void main(String[] args) {
+	
+		Livro l1 = new Livro("Duma", "O Conde");
+		LivroDigital l2 = new LivroDigital("Tolkien", "O Hobbit","www.tolkien.com");
+		
+		
+		System.out.println(l1);
+		System.out.println(l1 instanceof Livro);
+		System.out.println(l1 instanceof LivroDigital);
+		System.out.println(l2);
+		System.out.println(l2 instanceof Livro);
+		System.out.println(l2 instanceof LivroDigital);
+
+	}
+
+}

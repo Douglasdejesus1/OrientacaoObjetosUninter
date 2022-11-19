@@ -1,0 +1,28 @@
+package uninter;
+
+public class Euro extends Moeda{
+	
+
+	public Euro(double valorI) {
+		//super(valor);
+		this.valor = valorI;
+	}
+
+	@Override
+	public void info() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public double converter() {
+		return this.valor*6;
+		
+	}
+	@Override
+	public String toString() {
+		return "Euro [valor= £$ " + valor + "]";
+	}
+	
+
+}

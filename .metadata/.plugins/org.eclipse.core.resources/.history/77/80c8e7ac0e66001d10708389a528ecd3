@@ -1,0 +1,10 @@
+package empresa;
+
+public class Principal {
+	public static void main(String[] args) {
+
+		LivroDigital livroD = new LivroDigital("O Hobbit", new Autor("Tolkien", "tolkien@tolkien.com", "Ingles"), "Aventura", 1, 15, 25.5);
+		
+		livroD.info();
+	}
+}

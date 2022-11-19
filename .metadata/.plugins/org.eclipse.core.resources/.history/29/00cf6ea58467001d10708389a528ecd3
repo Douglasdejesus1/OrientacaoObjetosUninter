@@ -1,0 +1,17 @@
+package empresa;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		Desktop d1 = new Desktop(8, 8, 3);
+		Desktop d2 = new Desktop(32, 16, 5);
+		Notebook n1 = new Notebook(8, 8, 14);
+		Notebook n2 = new Notebook(16, 12, 16);
+		System.out.println(d1.calculaValor());
+		System.out.println(d2.calculaValor());
+		System.out.println(n1.calculaValor());
+		System.out.println(n2.calculaValor());
+		
+	}
+
+}

@@ -1,0 +1,15 @@
+package Program;
+
+import java.util.Scanner;
+
+public class Principal {
+	public static void main(String[] args) {
+	Scanner teclado = new Scanner(System.in);
+	System.out.println("Qual sua idade");
+	int idade = teclado.nextInt();
+	
+	System.out.print("Sua idade é: "+ idade);
+	teclado.close();
+	}
+}
+

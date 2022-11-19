@@ -1,0 +1,45 @@
+package uninter;
+
+import java.util.Objects;
+
+public class Dolar extends Moeda {
+	
+	Real real;
+	public Dolar(double valor) {
+		this.valor=valor;
+	}
+
+	@Override
+	public void info() {
+		System.out.println("Há o total de US$: "+valor);
+	}
+
+	@Override
+	public void converter() {
+		valor =valor*5;
+		
+	}
+	@Override
+	public String toString() {
+		return "Dolar [valor= US$ " + valor + "]";
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(real);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Dolar other = (Dolar) obj;
+		return Objects.equals(real, other.real);
+	}
+
+	
+}

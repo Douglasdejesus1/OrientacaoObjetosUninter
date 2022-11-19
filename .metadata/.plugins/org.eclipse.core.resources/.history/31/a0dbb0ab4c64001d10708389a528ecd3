@@ -1,0 +1,25 @@
+package empresa;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		Aluno a = new Aluno();
+		a.nome="Douglas";
+		a.matricula=31801;
+		a.cpf="384.531.288-20";
+		
+		a.info();
+		Aluno b = new Aluno();
+		b.nome="Flavia";
+		b.matricula=31802;
+		b.cpf="531.001.951.25";
+		
+		b.info();
+		Carro c = new Carro();
+		System.out.println(Carro.milhasParaMetros(10));
+		System.out.println(Carro.PI);
+		
+		
+	}
+}
+

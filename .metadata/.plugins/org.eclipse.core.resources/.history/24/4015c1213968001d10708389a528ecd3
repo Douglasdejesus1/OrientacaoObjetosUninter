@@ -1,0 +1,28 @@
+package uninter;
+
+import java.util.ArrayList;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		
+		Cofrinho cofrinho = null;
+		ArrayList<Moeda> moedas = new ArrayList<>();
+		Real reais = new Real(12.05);
+		Real reais2 = new Real(25.85);
+		
+		moedas.add(reais);
+		moedas.add(reais2);
+		
+		System.out.println(moedas.size());
+		double soma = 0;
+		
+			for(Moeda m: moedas) {
+				soma+=m.valor;
+			}
+			reais.info();
+		
+		
+	}
+
+}

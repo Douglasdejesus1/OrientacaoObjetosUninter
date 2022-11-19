@@ -1,0 +1,20 @@
+package uninter;
+
+public class Real extends Moeda{
+	Cofrinho cofrinho;
+
+	public Real(double valor) {
+		super(valor);
+	}
+
+	public void converter() {
+		valor = valor;
+	}
+
+	@Override
+	public void info() {
+		System.out.println("Há o total de R$"+cofrinho.soma);
+		
+	}
+
+}

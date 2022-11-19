@@ -1,0 +1,30 @@
+package uninter;
+
+import java.util.Objects;
+
+public class Dolar extends Moeda {
+	
+	
+	public Dolar(double valor) {
+		this.valor=valor;
+	}
+
+	@Override
+	public void info() {
+		System.out.printf("Dolar= US$ %.2f ]",valor);
+	}
+
+	@Override
+	public double converter() {
+		return this.valor*5;
+		
+	}
+	@Override
+	public String toString() {
+		return "Dolar [valor= US$ " + valor + "]";
+	}
+
+	
+
+	
+}

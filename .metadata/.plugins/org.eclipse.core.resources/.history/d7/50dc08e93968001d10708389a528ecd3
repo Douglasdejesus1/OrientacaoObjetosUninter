@@ -1,0 +1,22 @@
+package uninter;
+
+import java.util.ArrayList;
+
+public class Cofrinho {
+	
+
+	ArrayList<Moeda> moedas = new ArrayList<Moeda>();
+	
+	
+	
+	
+	
+	
+	public void listar() {
+		for(Moeda m: moedas) {
+			System.out.println(m);
+		}
+	}
+
+
+}

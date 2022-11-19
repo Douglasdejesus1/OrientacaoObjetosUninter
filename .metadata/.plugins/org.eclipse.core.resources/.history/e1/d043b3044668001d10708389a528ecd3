@@ -1,0 +1,25 @@
+package uninter;
+
+public class Dolar extends Moeda {
+	
+	Real real;
+	public Dolar(double valor) {
+		super(valor);
+	}
+
+	@Override
+	public void info() {
+		System.out.println("Há o total de US$: "+valor);
+	}
+
+	@Override
+	public void converter() {
+		valor =valor*5;
+		
+	}
+	@Override
+	public String toString() {
+		return "Dolar [valor= US$ " + valor + "]";
+	}
+
+}
